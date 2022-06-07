@@ -1,6 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+            
 <head>
     <title>Password Generator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -8,13 +11,20 @@
 
 <body>
     <div class="box">
+
+        <!--TITLE-->
+
         <div id="title">
             <h2>Generate a <br>
             <span id="text-purple">random password</span></h2>
             <p>Never use an insecure password again.</p>
         </div>
 
+        <!--INPUT PASSWORD LENGTH FIELD-->
+
         <input type="number" id="input-password" onchange="setLength()" min="4" max="8">
+
+        <!--GENERATE PASSWORD BUTTON-->
 
         <div id="button" class="btn1"onclick="genPassword()">
             Generate passwords
@@ -23,6 +33,9 @@
         <hr>
 
         <div id="gen-password-content">
+
+            <!--FIRST PASSWORD-->
+
             <span class="gen-password">
                 <input type="text" name="" placeholder="Create password" class="password" id="password-1" readonly>
                 <div class="tooltip">
@@ -30,6 +43,8 @@
                     <span class="tooltiptext" id="myTooltip1">Copy to clipboard</span>
                 </div>
             </span>
+
+            <!--SECOND PASSWORD-->
 
             <span class="gen-password">   
                 <input type="text" name="" placeholder="Create password" class="password" id="password-2" readonly>
@@ -39,6 +54,8 @@
                 </div>    
             </span> 
 
+            <!--THIRD PASSWORD-->
+
             <span class="gen-password">    
                 <input type="text" name="" placeholder="Create password" id="password-3" readonly>
                 <div class="tooltip">
@@ -46,6 +63,8 @@
                     <span class="tooltiptext" id="myTooltip3">Copy to clipboard</span>
                 </div>
             </span> 
+
+            <!--FOURTH PASSWORD-->
 
             <span class="gen-password">    
                 <input type="text" name="" placeholder="Create password" id="password-4" readonly>
