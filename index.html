@@ -1,18 +1,27 @@
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
-<title>Password Generator</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div class="box">
         <div id="title">
-        <h2>Generate a <br>
-        <span id="text-purple">random password</span></h2>
-        <p>Never use an insecure password again.</p>
+            <h2>Generate a <br>
+            <span id="text-purple">random password</span></h2>
+            <p>Never use an insecure password again.</p>
         </div>
+
         <input type="number" id="input-password" onchange="setLength()" min="4" max="8">
-        <div id="button" class="btn1"onclick="genPassword()">Generate passwords</div>
+
+        <div id="button" class="btn1"onclick="genPassword()">
+            Generate passwords
+        </div>
+
         <hr>
+
         <div id="gen-password-content">
             <span class="gen-password">
                 <input type="text" name="" placeholder="Create password" class="password" id="password-1" readonly>
@@ -21,6 +30,7 @@
                     <span class="tooltiptext" id="myTooltip1">Copy to clipboard</span>
                 </div>
             </span>
+
             <span class="gen-password">   
                 <input type="text" name="" placeholder="Create password" class="password" id="password-2" readonly>
                 <div class="tooltip">
@@ -28,16 +38,26 @@
                     <span class="tooltiptext" id="myTooltip2">Copy to clipboard</span>
                 </div>    
             </span> 
+
             <span class="gen-password">    
                 <input type="text" name="" placeholder="Create password" id="password-3" readonly>
-                <img src="./components/copy.svg" class="btn2" onclick="copyPassword3()" onmouseout="outTooltip3()">
+                <div class="tooltip">
+                    <img src="./components/copy.svg" class="btn2" onclick="copyPassword3()" onmouseout="outTooltip3()">
+                    <span class="tooltiptext" id="myTooltip3">Copy to clipboard</span>
+                </div>
             </span> 
-           <span class="gen-password">    
+
+            <span class="gen-password">    
                 <input type="text" name="" placeholder="Create password" id="password-4" readonly>
-                <img src="./components/copy.svg" class="btn2" onclick="copyPassword4()">
+                <div class="tooltip">
+                    <img src="./components/copy.svg" class="btn2" onclick="copyPassword4()" onmouseout="outTooltip4()">
+                    <span class="tooltiptext" id="myTooltip4">Copy to clipboard</span>
+                </div>
            </span class="gen-password">
         </div>
-    </div>    
+    </div> 
+
 <script src="script.js"></script>
+
 </body>
 </html>

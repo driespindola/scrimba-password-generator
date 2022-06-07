@@ -81,12 +81,18 @@ function copyPassword3() {
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
+  
+  let tooltip = document.getElementById("myTooltip3");
+  tooltip.innerHTML = "Copied: " + copyText.value;
 } 
 function copyPassword4() {
   let copyText = document.getElementById("password-4");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
+
+  let tooltip = document.getElementById("myTooltip4");
+  tooltip.innerHTML = "Copied: " + copyText.value;
 } 
 
 function outTooltip1() {
@@ -101,5 +107,10 @@ function outTooltip2() {
 
 function outTooltip3() {
   var tooltip = document.getElementById("myTooltip3");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+function outTooltip4() {
+  var tooltip = document.getElementById("myTooltip4");
   tooltip.innerHTML = "Copy to clipboard";
 }
