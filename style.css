@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Karla:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     }
+   
+body {
+     background-color: #8d0cf7;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     min-height: 100vh;
+     font-family: 'Inter', sans-serif;
+       }
+   
+.box {
+      display: block;
+      background-color: #EDE9FE;
+      padding: 1.87em;
+      margin: 4em;
+    }
+
+hr {
+  margin: 3.25em 2.18em;
+}
+
+#title {
+  margin-bottom: 3.5em;
+  margin-top: 5.56em;
+  text-align: center;
+    }
+    
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+      }
+
+h2 #text-purple {
+  color: #8B5CF6;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#input-password {
+  display: block;
+  width: 11.62em;
+  height: 1.75em;
+  margin-top: 1.75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.18em;
+  background: #EDE9FE; 
+  border: 2px solid black;
+  font-size: 13px;
+}
+
+#input-password::placeholder {
+ font-size: 13px;
+}
+    
+#gen-password-content {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 1.87em;
+        grid-column-gap: 1.5em;
+        margin-top: 2.43em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.gen-password {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #273549;
+        height: 2.43em;
+        width: 13.18em;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 0.37em;
+      }
+
+.btn2 {
+  color: black;
+  cursor: pointer;
+}
+    
+input {
+    padding: 0.37em;
+    user-select: none;
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-weight: 500;
+    color: #8B5CF6;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    }
+   
+input::placeholder{
+     font-size: 16px;
+    } 
+
+    
+#button {
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 2px solid #8B5CF6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 11.93em;
+  height: 2.62em;
+  text-align: center;
+  background-color: #8B5CF6;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.93em 0.56em;  
+      }
+      
+  #button:hover {
+        color: white;
+        background-color: black;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
