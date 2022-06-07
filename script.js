@@ -1,3 +1,5 @@
+// Creating 4 functions so the button will generate 4 different passwords
+
 function genPassword1() {
   let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let passwordLength = document.getElementById("input-password").value - 1
@@ -10,9 +12,9 @@ function genPassword1() {
         document.getElementById(
           "password-1").innerHTML = passwordLength;
 
- }
+}
 
- function genPassword2() {
+function genPassword2() {
   let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let passwordLength = document.getElementById("input-password").value - 1;
   let password = "";
@@ -23,9 +25,9 @@ function genPassword1() {
         document.getElementById("password-2").value = password;
         document.getElementById(
           "password-2").innerHTML = passwordLength;
- }
+}
 
- function genPassword3() {
+function genPassword3() {
   let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let passwordLength = document.getElementById("input-password").value - 1;
   let password = "";
@@ -36,9 +38,9 @@ function genPassword1() {
         document.getElementById("password-3").value = password;
         document.getElementById(
           "password-2").innerHTML = passwordLength;
- }
+}
 
- function genPassword4() {
+function genPassword4() {
   let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let passwordLength = document.getElementById("input-password").value - 1;
   let password = "";
@@ -49,7 +51,9 @@ function genPassword1() {
         document.getElementById("password-4").value = password;
         document.getElementById(
           "password-2").innerHTML = passwordLength;
- }
+}
+
+// Function to call all passwords in one button
 
 function genPassword() {
   genPassword1()
@@ -57,6 +61,8 @@ function genPassword() {
   genPassword3()
   genPassword4()
 }
+
+// Copy each password
 
 function copyPassword1() {
   let copyText = document.getElementById("password-1");
@@ -66,7 +72,8 @@ function copyPassword1() {
 
   let tooltip = document.getElementById("myTooltip1");
   tooltip.innerHTML = "Copied: " + copyText.value;
-} 
+}
+
 function copyPassword2() {
   let copyText = document.getElementById("password-2");
   copyText.select();
@@ -76,6 +83,7 @@ function copyPassword2() {
   let tooltip = document.getElementById("myTooltip2");
   tooltip.innerHTML = "Copied: " + copyText.value;
 } 
+
 function copyPassword3() {
   let copyText = document.getElementById("password-3");
   copyText.select();
@@ -85,6 +93,7 @@ function copyPassword3() {
   let tooltip = document.getElementById("myTooltip3");
   tooltip.innerHTML = "Copied: " + copyText.value;
 } 
+
 function copyPassword4() {
   let copyText = document.getElementById("password-4");
   copyText.select();
@@ -94,6 +103,8 @@ function copyPassword4() {
   let tooltip = document.getElementById("myTooltip4");
   tooltip.innerHTML = "Copied: " + copyText.value;
 } 
+
+// Display copied text in a tooltip
 
 function outTooltip1() {
   var tooltip = document.getElementById("myTooltip1");
