@@ -23,7 +23,7 @@
 
         <!--INPUT PASSWORD LENGTH FIELD-->
 
-        <input type="number" id="input-password" onchange="setLength()" min="4" max="12">
+        <input type="number" id="input-password" min="4" max="12">
 
         <!--GENERATE PASSWORD BUTTON-->
 
@@ -58,7 +58,7 @@
             <!--THIRD PASSWORD-->
 
             <span class="gen-password">    
-                <input type="text" name="" placeholder="Create password" id="password-3" readonly>
+                <input type="text" name="" placeholder="Create password" class="password" id="password-3" readonly>
                 <div class="tooltip">
                     <img src="./components/copy.svg" class="copy" onclick="copyPassword3()" onmouseout="outTooltip3()">
                     <span class="tooltiptext" id="myTooltip3">Copy to clipboard</span>
@@ -68,7 +68,7 @@
             <!--FOURTH PASSWORD-->
 
             <span class="gen-password">    
-                <input type="text" name="" placeholder="Create password" id="password-4" readonly>
+                <input type="text" name="" placeholder="Create password" class="password" id="password-4" readonly>
                 <div class="tooltip">
                     <img src="./components/copy.svg" class="copy" onclick="copyPassword4()" onmouseout="outTooltip4()">
                     <span class="tooltiptext" id="myTooltip4">Copy to clipboard</span>

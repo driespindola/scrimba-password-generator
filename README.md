@@ -32,7 +32,7 @@ function genPassword() {
 </div>
 ```
 
-I used 4 functions to generate 4 different passwords, and called all them in one fuction.
+I used 4 functions to generate 4 different passwords, and called all them in one function.
 
 ### Display password options
 
@@ -45,18 +45,19 @@ I used 4 functions to generate 4 different passwords, and called all them in one
 ```
 
 ```
-<input type="text" name="" placeholder="Create password" id="password-3" readonly>
+<input type="text" name="" placeholder="Create password" class="password" id="password-3" readonly>
 ```
 
 ```
-<input type="text" name="" placeholder="Create password" id="password-4" readonly>
+<input type="text" name="" placeholder="Create password" class="password" id="password-4" readonly>
 ```
 
 ### Stretch - Ability to set the password lenght
 
 ```
-<input type="number" id="input-password" min="4" max="12">
-´´´
+<input type="number" id="input-password" min="4" max="12">´
+```
+
 I set a min/max lenght based on what is usually asked in social media.
 
 ```
@@ -65,7 +66,7 @@ let passwordLength = document.getElementById("input-password").value - 1;
 
 ```
 document.getElementById("password-2").innerHTML = passwordLength;
-´´´
+```
 
 ### Stretch - 1-click copy password to clipboard
 
