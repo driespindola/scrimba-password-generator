@@ -1,7 +1,7 @@
 // Creating 4 functions so the button will generate 4 different passwords
 
 function genPassword1() {
-  let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let chars = ["0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
   let passwordLength = document.getElementById("input-password").value - 1
   let password = "";
  for (let i = 0; i <= passwordLength; i++) {
