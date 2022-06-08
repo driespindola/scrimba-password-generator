@@ -60,6 +60,7 @@ p {
   margin-bottom: 2.18em;
   background: #EDE9FE; 
   border: 2px solid black;
+  color: #8B5CF6;
   font-size: 13px;
 }
 
@@ -92,7 +93,7 @@ p {
   padding: 0.37em;
 }
 
-.btn2 {
+.copy {
   color: black;
   cursor: pointer;
 }
@@ -104,7 +105,7 @@ input {
   width: 100%;
   background: none;
   font-weight: 500;
-  color: #8B5CF6;
+  color: white;
   border: none;
   outline: none;
   font-size: 16px;
@@ -126,7 +127,7 @@ input::placeholder{
   text-align: center;
   background-color: #8B5CF6;
   display: flex;
-  color: rgb(255, 255, 255);
+  color: white;
   justify-content: center;
   align-items: center;
   cursor: pointer;
